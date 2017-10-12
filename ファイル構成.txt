@@ -1,0 +1,77 @@
+ファイル構成
+.
+ |-.metadata
+ |-.recommenders
+ |-lib ライブラリ保存場所 ライブラリについては収録していません。
+ |-jackson-annotations-2.9.1 今
+ |-jackson-core-2.9.1
+ |-jackson-databind-2.3.1
+ |-lucene-analyzers-common-7.0.1
+ |-lucene-queryparser-7.0.1
+ |-lucenne-suggest-7.0.1
+
+-MWS2017
+ |-.settings
+ |-base
+ | |-baseapi.txt ファイルに含まれるAPIをすべて抽出した結果が格納されます。
+ |   
+ |-basedata
+ | |-3-2files CuckooSandboxの解析結果を複数入れるフォルダです。自動的に読み込まれます。
+ | |-BadAPIList.csv 抽出したいAPIの一覧をAの列にひとつづつ格納したものです。　収録していません。
+ |
+ |-bin
+ |-cosin コサイン距離の計算結果が格納されるフォルダです。
+ | |-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
+ | 
+ |-euclid ユークリッド距離の計算結果が格納されるフォルダです。
+ | |-euclideandistance.txt 2ファイル間のユークリッド距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
+ |
+ |-filelist 処理を行うファイルの一覧が格納されるフォルダです。
+ | |-filelist.txt 処理を行うファイルの一覧が格納されます。
+ |
+ |-group 計算方法に基づき、各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-cos コサイン距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-euc ユークリッド距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-fuzzyhash ファジーハッシュに基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-jaro ジャロウィンクラー距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-judgement 現在開発中の機能用フォルダです。
+ |
+ |-hash ファジーハッシュの計算結果が格納されるフォルダです
+ | |-SimilarityRate.txtの計算結果が格納されるフォルダです。
+ | 
+ |-hashdata　各ファイルから抽出したハッシュ値が格納されるフォルダです。
+ |
+ |-jarowinkler ジャロウィンクラー距離の計算結果が格納されるフォルダです
+ | |-SimilarityRate.txtの計算結果が格納されるフォルダです。
+ |-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
+ |
+ |-judgement　現在間髪中の機能用フォルダです。
+ |
+ |-logs ログデータが格納されます。
+ |
+ |-predata 各ファイルからAPIのみを抽出した結果が格納されるフォルダです。
+ |
+ |-src プログラムのソースが入っているフォルダです。
+ | |-test
+ | | |-Main.java メインメソッドです。　行う処理の設定も可能です。
+ | |
+ | |-utils 様々な演算を行うクラスが入っているフォルダです。
+ | |-CheckAPI.java
+ | |-CheckData
+ | |-CosinCalculation
+ | |-Desimal
+ | |-EuclidianCalculation
+ | |-ExtractionAPI
+ | |-JaroWrinkler
+ | |-Judgement
+ | |-OperateFile
+ | |-Reader
+ | |-Reduction
+ | |-Search
+ | |-SimilarityRate
+ | |-Util
+ | |-Vector
+ | |-Writer
+ |
+ |-vectordata BadAPIListをもとに各対象ファイルをベクトル化したデータが格納されるフォルダです。
+ 　|-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
