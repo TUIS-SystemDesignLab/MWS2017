@@ -1,61 +1,61 @@
-�t�@�C���\��
+ファイル構成
 .
  |-.metadata
  |-.recommenders
- |-lib ���C�u�����ۑ��ꏊ ���C�u�����ɂ��Ă͎��^���Ă��܂���B
- |-jackson-annotations-2.9.1 ��
- |-jackson-core-2.9.1
- |-jackson-databind-2.3.1
- |-lucene-analyzers-common-7.0.1
- |-lucene-queryparser-7.0.1
- |-lucenne-suggest-7.0.1
-
--MWS2017
+ |-lib ライブラリ保存場所 ライブラリについては収録していません。
+ | |-jackson-annotations-2.9.1 今
+ | |-jackson-core-2.9.1
+ | |-jackson-databind-2.3.1
+ | |-lucene-analyzers-common-7.0.1
+ | |-lucene-queryparser-7.0.1
+ | |-lucenne-suggest-7.0.1
+ |
+ |-MWS2017
  |-.settings
  |-base
- | |-baseapi.txt �t�@�C���Ɋ܂܂��API�����ׂĒ��o�������ʂ��i�[����܂��B
+ | |-baseapi.txt ファイルに含まれるAPIをすべて抽出した結果が格納されます。
  |   
  |-basedata
- | |-3-2files CuckooSandbox�̉�͌��ʂ𕡐������t�H���_�ł��B�����I�ɓǂݍ��܂�܂��B
- | |-BadAPIList.csv ���o������API�̈ꗗ��A�̗�ɂЂƂÂi�[�������̂ł��B�@���^���Ă��܂���B
+ | |-3-2files CuckooSandboxの解析結果を複数入れるフォルダです。自動的に読み込まれます。
+ | |-BadAPIList.csv 抽出したいAPIの一覧をAの列にひとつづつ格納したものです。　収録していません。
  |
  |-bin
- |-cosin �R�T�C�������̌v�Z���ʂ��i�[�����t�H���_�ł��B
- | |-cosinsimiler.txt 2�t�@�C���Ԃ̃R�T�C���������i�[����܂��B�@�c�����ꂼ��filelist.txt�ɋL�ڂ���Ă��鏇�Ԃɕ���ł��܂��B
+ |-cosin コサイン距離の計算結果が格納されるフォルダです。
+ | |-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
  | 
- |-euclid ���[�N���b�h�����̌v�Z���ʂ��i�[�����t�H���_�ł��B
- | |-euclideandistance.txt 2�t�@�C���Ԃ̃��[�N���b�h�������i�[����܂��B�@�c�����ꂼ��filelist.txt�ɋL�ڂ���Ă��鏇�Ԃɕ���ł��܂��B
+ |-euclid ユークリッド距離の計算結果が格納されるフォルダです。
+ | |-euclideandistance.txt 2ファイル間のユークリッド距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
  |
- |-filelist �������s���t�@�C���̈ꗗ���i�[�����t�H���_�ł��B
- | |-filelist.txt �������s���t�@�C���̈ꗗ���i�[����܂��B
+ |-filelist 処理を行うファイルの一覧が格納されるフォルダです。
+ | |-filelist.txt 処理を行うファイルの一覧が格納されます。
  |
- |-group �v�Z���@�Ɋ�Â��A�e�t�@�C���̈���Ǝv����t�@�C���̖��O�����ꂼ��i�[�����t�H���_�ł��B
- | |-cos �R�T�C�������Ɋ�Â��Ċe�t�@�C���̈���Ǝv����t�@�C���̖��O�����ꂼ��i�[�����t�H���_�ł��B
- | |-euc ���[�N���b�h�����Ɋ�Â��Ċe�t�@�C���̈���Ǝv����t�@�C���̖��O�����ꂼ��i�[�����t�H���_�ł��B
- | |-fuzzyhash �t�@�W�[�n�b�V���Ɋ�Â��Ċe�t�@�C���̈���Ǝv����t�@�C���̖��O�����ꂼ��i�[�����t�H���_�ł��B
- | |-jaro �W�����E�B���N���[�����Ɋ�Â��Ċe�t�@�C���̈���Ǝv����t�@�C���̖��O�����ꂼ��i�[�����t�H���_�ł��B
- | |-judgement ���݊J�����̋@�\�p�t�H���_�ł��B
+ |-group 計算方法に基づき、各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-cos コサイン距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-euc ユークリッド距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-fuzzyhash ファジーハッシュに基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-jaro ジャロウィンクラー距離に基づいて各ファイルの亜種と思われるファイルの名前がそれぞれ格納されるフォルダです。
+ | |-judgement 現在開発中の機能用フォルダです。
  |
- |-hash �t�@�W�[�n�b�V���̌v�Z���ʂ��i�[�����t�H���_�ł�
- | |-SimilarityRate.txt�̌v�Z���ʂ��i�[�����t�H���_�ł��B
+ |-hash ファジーハッシュの計算結果が格納されるフォルダです
+ | |-SimilarityRate.txtの計算結果が格納されるフォルダです。
  | 
- |-hashdata�@�e�t�@�C�����璊�o�����n�b�V���l���i�[�����t�H���_�ł��B
+ |-hashdata　各ファイルから抽出したハッシュ値が格納されるフォルダです。
  |
- |-jarowinkler �W�����E�B���N���[�����̌v�Z���ʂ��i�[�����t�H���_�ł�
- | |-SimilarityRate.txt�̌v�Z���ʂ��i�[�����t�H���_�ł��B
- |-cosinsimiler.txt 2�t�@�C���Ԃ̃R�T�C���������i�[����܂��B�@�c�����ꂼ��filelist.txt�ɋL�ڂ���Ă��鏇�Ԃɕ���ł��܂��B
+ |-jarowinkler ジャロウィンクラー距離の計算結果が格納されるフォルダです
+ | |-SimilarityRate.txtの計算結果が格納されるフォルダです。
+ |-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
  |
- |-judgement�@���݊Ԕ����̋@�\�p�t�H���_�ł��B
+ |-judgement　現在開発中の機能用フォルダです。
  |
- |-logs ���O�f�[�^���i�[����܂��B
+ |-logs ログデータが格納されます。
  |
- |-predata �e�t�@�C������API�݂̂𒊏o�������ʂ��i�[�����t�H���_�ł��B
+ |-predata 各ファイルからAPIのみを抽出した結果が格納されるフォルダです。
  |
- |-src �v���O�����̃\�[�X�������Ă���t�H���_�ł��B
+ |-src プログラムのソースが入っているフォルダです。
  | |-test
- | | |-Main.java ���C�����\�b�h�ł��B�@�s�������̐ݒ���\�ł��B
+ | | |-Main.java メインメソッドです。　行う処理の設定も可能です。
  | |
- | |-utils �l�X�ȉ��Z���s���N���X�������Ă���t�H���_�ł��B
+ | |-utils 様々な演算を行うクラスが入っているフォルダです。
  | |-CheckAPI.java
  | |-CheckData
  | |-CosinCalculation
@@ -73,5 +73,5 @@
  | |-Vector
  | |-Writer
  |
- |-vectordata BadAPIList�����ƂɊe�Ώۃt�@�C�����x�N�g���������f�[�^���i�[�����t�H���_�ł��B
- �@|-cosinsimiler.txt 2�t�@�C���Ԃ̃R�T�C���������i�[����܂��B�@�c�����ꂼ��filelist.txt�ɋL�ڂ���Ă��鏇�Ԃɕ���ł��܂��B
+ |-vectordata BadAPIListをもとに各対象ファイルをベクトル化したデータが格納されるフォルダです。
+ 　|-cosinsimiler.txt 2ファイル間のコサイン距離が格納されます。　縦横それぞれfilelist.txtに記載されている順番に並んでいます。
